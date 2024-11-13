@@ -1,0 +1,145 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.navbar {
+  width: 98%;
+  background-color: #1E2126;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 60px; /* Altura fija del navbar */
+}
+
+.sidebar {
+  background-color: #1E2126;
+  width: 250px;
+  padding-top: 2rem;
+  box-sizing: border-box;
+  margin-top: 60px; /* Mismo que navbar */
+  height: calc(100% - 60px); /* Igual */
+  position: fixed;
+  overflow-y: auto;
+  padding-bottom: 1rem;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  margin: 5px 0;
+  transition: background-color 0.3s;
+}
+
+.menu-item.active {
+  background-color: #4E5D6C;
+}
+
+.menu-icon {
+  margin-right: 10px;
+}
+
+.main-content {
+  flex-grow: 1;
+  margin-left: 250px;
+  margin-top: 60px; 
+  padding: 1rem;
+  background-color: #16191C; 
+  color: #ffffff;
+  transition: margin-left 0.3s; 
+}
+
+.logo-container img {
+  height: 60px;
+}
+
+.account-info-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.content {
+  padding: 2rem;
+  text-align: center;
+  max-width: 800px; /* Limitar el ancho del contenido */
+  margin: 0 auto; /* Centrar el contenido */
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.account-form {
+  background-color: #2C303A; /* Fondo del formulario */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para dar profundidad */
+  margin-top: 2rem; /* Espacio sobre el formulario */
+}
+
+.form-group {
+  margin-bottom: 1rem; /* Espacio entre campos de formulario */
+}
+
+.form-group label {
+  display: block;
+  color: #CCC;
+  text-align: left;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.form-actions {
+  margin-top: 2rem; 
+}
+
+.form-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 1rem; /* Espacio entre botones */
+}
+
+.save-btn {
+  background-color: #4CAF50; /* Verde para acción de guardar */
+  color: white;
+}
+
+.delete-btn {
+  background-color: #F44336; /* Rojo para acción de eliminar */
+  color: white;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,79 @@
+@import './Dashboard.css';
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 1rem;
+  padding-right: 0;  
+  padding-left: 0;   
+  width: 1000px;
+  margin-left: -100px;
+}
+
+.clients-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.clients-table th,
+.clients-table td {
+  text-align: left;
+  padding: 8px 16px; 
+  border-bottom: 1px solid #333842;
+}
+
+.clients-table th {
+  background-color: #292C33;
+  color: white;
+}
+
+.clients-table tbody tr:hover {
+  background-color: #333842;
+}
+
+.clients-table td {
+  color: #ddd;
+}
+
+.action-icon {
+  cursor: pointer;
+  margin-right: 8px;
+  color: #ddd;
+}
+
+.action-icon:hover {
+  color: #fff;
+}
+
+.btn-add-client {
+  background-color: #4E5D6C;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-add-client:hover {
+  background-color: #667C8A;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: #ddd;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.icon-button:hover {
+  color: white;
+}
+
+.icon-button:focus {
+  outline: 2px solid #4E5D6C;
+}

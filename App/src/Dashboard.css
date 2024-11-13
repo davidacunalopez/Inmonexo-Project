@@ -1,0 +1,189 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .navbar {
+    width: 98%;
+    background-color: #1E2126;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 60px; /* Altura fija del navbar */
+  }
+  
+  .sidebar {
+    background-color: #1E2126;
+    width: 250px;
+    padding-top: 2rem;
+    box-sizing: border-box;
+    margin-top: 60px; /* Mismo que navbar */
+    height: calc(100% - 60px); /* Igual */
+    position: fixed;
+    overflow-y: auto;
+    padding-bottom: 1rem;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    margin: 5px 0; /* Entre los elementos del menú */
+    transition: background-color 0.3s;
+  }
+
+  .menu-item.active {
+    background-color: #4E5D6C; /* Resalta */
+  }
+  
+  .menu-icon {
+    margin-right: 10px;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    margin-left: 250px; 
+    margin-top: 50px; 
+    padding: 1rem;
+    background-color: #16191C; 
+  }
+  
+  .logo-container img {
+    height: 60px; 
+  }
+  
+  .account-info-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem; 
+    text-decoration: none;
+  }
+  
+  .content {
+    padding: 2rem;
+    color: white;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .stats {
+    width: 120%;
+    margin-left: -60px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .stat-card {
+    margin-top: 20px;
+    margin-right: 10px;
+    background-color: #292C33;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 22%; 
+  }
+  
+  .stat-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .dual-container {
+    margin-left: -60px;
+    width: 120%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .activity {
+    margin-right: 10px;
+    background-color: #292C33;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%; 
+  }
+
+  .recent-clients {
+    margin-right: 10px;
+    background-color: #292C33;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%; 
+  }
+  
+  .recent-clients ul {
+    list-style: none;
+  }
+
+  .actions {
+    margin-top: 40px;
+  }
+  
+  .actions .action-button {
+    margin-right: 20px;
+    width: 500px;
+    background-color: #a64cda;
+    color: white;
+    padding: 15px 30px; 
+    font-size: 1.2rem; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .actions .action-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /*Cambios para salir de sesion*/
+
+  .user-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .account-info-btn {
+    color: #ffffff;
+    font-size: 1.5rem; /* Ajusta el tamaño del icono */
+  }
+  
+  .logout-btn {
+    background-color: #3a3a3a; /* Fondo más oscuro para armonizar */
+    color: #ffffff; /* Color de texto blanco */
+    padding: 8px 12px; /* Espaciado interno para mejorar apariencia */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Animación para hover */
+    margin-top: 0px;
+    margin-right: 20px;
+  }
+  
+  .logout-btn:hover {
+    background-color: #4CAF50; /* Color de fondo en hover */
+  }
+  
+  .logout-btn:focus {
+    outline: none;
+    box-shadow: 0 0 4px #4CAF50; /* Sombra para enfoque accesible */
+  }
+  

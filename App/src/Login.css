@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2c2c2c;
+}
+
+.login-image {
+    height: 100%; 
+    width: 60%; /* Dejar claros las proporciones */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.login-form {
+    background: #16191C; 
+    height: 100%;
+    width: 40%; 
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    font-family: 'Mulish', sans-serif; /* Mulish font como en el figma */
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 2rem auto; 
+}
+
+h2 {
+    font-size: 2rem; 
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    width: 100%; 
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    background-color: #2c2c2c; 
+    color: white; 
+    border: 1px solid #444; 
+    width: 100%; 
+    padding: 0.75rem; 
+    border-radius: 0.5rem;
+    font-family: 'Mulish', sans-serif; 
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: white; 
+}
+
+.login-button {
+    background-color: #009688; 
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    width: 100%; 
+    border-radius: 0.5rem; /* Bordes redondeados */
+    font-family: 'Mulish', sans-serif; 
+    font-size: 1rem;
+    margin-bottom: 1rem; 
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 2rem;
+    color: white; 
+}
+
+.register-link a {
+    color: #009688; 
+}
+
+.form-group input::placeholder {
+    color: #bbb; /* Color del placeholder en las cajas de texto */
+}

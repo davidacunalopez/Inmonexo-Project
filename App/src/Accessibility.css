@@ -1,0 +1,35 @@
+@import './Dashboard.css';
+
+.accessibility-settings {
+    margin: 20px;
+    background: #2C303A;
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  .accessibility-settings label {
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  
+  .accessibility-settings select {
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+
+.high-contrast {
+    /* alto contraste para accesibilidad */
+    background-color: #000;
+    color: #fff;
+  }
+  
+  /* elementos específicos que deben cambiar, hay que aplicar esta clase */
+  .high-contrast-select {
+    background-color: #333;
+    color: #fff;
+  }

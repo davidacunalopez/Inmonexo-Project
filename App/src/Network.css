@@ -1,0 +1,50 @@
+@import './Dashboard.css';
+
+  .net-properties-container {
+    margin-left: -80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    width: 120%;
+  }
+  
+  .net-property-card {
+      width: 100%;
+      margin: 1px;
+      background-color: #292C33;
+      border-radius: 8px;
+      border: none; 
+      overflow: hidden;
+      display: block; 
+      cursor: pointer;
+      padding: 0; 
+      text-align: left; 
+      color: inherit; 
+      background: none; 
+  }
+  
+  .net-property-card:focus {
+      outline: none; /* para considerar la accesibilidad */
+      box-shadow: 0 0 0 2px #fff; /* Agrega un outline visible para la accesibilidad */
+  }
+  
+  .net-property-image {
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+  }
+  
+  .net-property-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+  }
