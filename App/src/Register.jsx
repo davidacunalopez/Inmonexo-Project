@@ -89,9 +89,10 @@ const Register = () => {
             value="owner"
             checked={role === 'owner'}
             onChange={e => setRole(e.target.value)}
-            aria-labelledby="role-label owner"
+            aria-label="Propietario"
           />
           <label htmlFor="owner">Propietario</label>
+          
           <input
             type="radio"
             id="agent"
@@ -99,7 +100,7 @@ const Register = () => {
             value="agent"
             checked={role === 'agent'}
             onChange={e => setRole(e.target.value)}
-            aria-labelledby="role-label agent"
+            aria-label="Agente Inmobiliario"
           />
           <label htmlFor="agent">Agente Inmobiliario</label>
         </div>

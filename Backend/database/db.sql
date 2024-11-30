@@ -84,24 +84,3 @@ INSERT INTO Usuarios (nombre, correo, contrasena, rol)
 VALUES ('Dario Espinoza Aguilar', 'darioespinoza477@gmail.com', '12345678', 0),
 ('Jose Pablo Mora', 'pablo@gmail.com', '87654321', 1),
 ('Pri Jimenez', 'pri@gmail.com', '$2a$10$LRTWBfpOj7g/7Gm0TY7rA.0v/aw4w1GdlrnHUaxqs.m4bsS0/KaSe', 1);
-
---Propiedades de prueba
-INSERT INTO Propiedades (nombre, direccion, tipo, precio, estado, descripcion, capacidad, usuarioId)
-VALUES ('Casa moderna', 'Girando a la derecha al fondo', 'Alquiler', 12000, 1, 'Casa futurista', 12, 1),
-('Casa de playa', 'Playa Samara', 'Venta', 200000, 1, 'Casa de Playa', 6, 1),
-('Apartamentos de lujo', 'Escazu', 'Alquiler', 1000, 1, 'Apartamentos con muchos beneficios', 3, 1),
-('Apartamento para 2 personas', 'El Guarco, Cartago', 'Alquiler', 3000, 1, 'Apartamento comodo', 2, 2),
-('Residencias estudiantiles', 'Occidental, Cartago', 'Compra', 200, 1, 'Residencias para estudiantes', 2, 2);
-
---Clientes de prueba
-INSERT INTO Clientes (nombre, correo, origen, tipo, usuarioId, propiedadId, descripcion)
-VALUES ('Usuario Prueba', 'Prueba1@gmail.com', 'Facebook', 0, 1, 1, 'Interesado'),
-('Usuario Prueba 2', 'Prueba2@gmail.com', 'Facebook', 0, 1, 1, 'Interesado'),
-('Usuario Prueba 3', 'Prueba3@gmail.com', 'Facebook', 1, 1, 1, 'Interesado');
-
-
---Eventos de prueba
-INSERT INTO Eventos (nombre, descripcion, estado, usuarioId, fechaEvento) VALUES ('Pago agua', 'Pagar el agua', 0, 1, CURRENT_TIMESTAMP);
-
---Pagos
-INSERT INTO Pagos (detalles, monto, tipo, propiedadid,usuarioId) VALUES ('Pago de luz', 500, 'Mensual', 1,1);

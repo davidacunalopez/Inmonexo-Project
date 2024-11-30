@@ -28,12 +28,12 @@ const Details = () => {
     const [property, setProperty] = useState({
       name: '',
       address: '',
-      type: '',  // Alquiler or Compra
-      price: propId, // Para probar que sí maneje bien el id
-      status: '',  // Disponible, Vendido, Pendiente
+      type: '',
+      price: '',
+      status: '',
       description: '',
-      capacity: ''
-    });
+      capacity: '',
+    });    
   useEffect(() => {
     getPropertieInfo(propId);
     getClientPropertie(propId);
@@ -379,7 +379,7 @@ const Details = () => {
             <div className="property-extra">
                 <h2>Adicional</h2>
                 <div>
-                    <button onClick={deleteProperty}>Eliminar Propiedad</button>
+                    <button onClick={deleteProperty}>Eliminar propiedad</button>
                 </div>
             </div>
                 </section>
